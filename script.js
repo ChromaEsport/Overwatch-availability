@@ -40,15 +40,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     initialView: "dayGridMonth",
     events,
-    locale: "fr",
+    locale: "en",
     firstDay: 1,
 
     buttonText: {
-      today: "Aujourd’hui",
-      month: "Mois",
-      week: "Semaine",
-      day: "Jour",
-      list: "Liste"
+      today: "Today",
+      month: "Month",
+      week: "Week",
+      day: "Day",
+      list: "List"
     },
 
     validRange: {
