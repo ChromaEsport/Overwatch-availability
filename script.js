@@ -367,7 +367,7 @@ function renderWeek() {
     div.classList.add("active");
   }
 
-    div.textContent = d.toLocaleDateString("fr-FR", {
+    div.textContent = d.toLocaleDateString("en-EN", {
       weekday: "long",
       day: "2-digit"
     });
