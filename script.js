@@ -343,6 +343,16 @@ function renderWeek() {
 
   container.innerHTML = "";
 
+  const start = new Date(today);
+  const end = new Date(today);
+
+  end.setDate(today.getDate() + 6);
+
+  const options = { day: "2-digit", month: "2-digit" };
+
+  range.textContent =
+    `📆 Week of ${start.toLocaleDateString("en-EN", options)} to ${end.toLocaleDateString("en-EN", options)}`;
+
   for (let i = 0; i < 7; i++) {
     const d = new Date(today);
     d.setDate(today.getDate() + i);
