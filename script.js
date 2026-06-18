@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* USER */
 function updateUI() {
   document.getElementById("playerText").textContent =
-    currentPlayer ? `Connecté en tant que : ${currentPlayer}` : "";
+    currentPlayer ? `Logged in as : ${currentPlayer}` : "";
 }
 
 /* USERNAME */
