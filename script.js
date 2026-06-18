@@ -438,6 +438,10 @@ async function renderEventsForDay() {
 
 /* MODALS */
 function openAvailModal() {
+
+  document.getElementById("modalPlayerName").textContent =
+    currentPlayer || "Unknown";
+
   document.getElementById("availModal").classList.remove("hidden");
 }
 
