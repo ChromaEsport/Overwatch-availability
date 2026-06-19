@@ -433,7 +433,7 @@ async function renderEventsForDay() {
           <span>${e.start} - ${e.end}</span>
         </div>
       `).join("")
-    : "Aucun event";
+    : "No events";
 }
 
 /* MODALS */
