@@ -99,8 +99,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
       
       else {
-        openEditModal(info.event);
-      }
+
+  if (info.event.extendedProps.player !== currentPlayer) {
+    alert("You can only edit your own availability.");
+    return;
+  }
+
+  openEditModal(info.event);
+}
     }
   });
 
