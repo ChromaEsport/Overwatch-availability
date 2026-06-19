@@ -78,6 +78,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       selectedCalendarEvent = info.event;
 
+      document.getElementById("eventModalTitle").textContent =
+      "Edit Event";
+  
       document.getElementById("eventTitle").value =
         info.event.extendedProps.title;
 
@@ -458,6 +461,9 @@ function closeAvailModal() {
 function openEventModal() {
 
   selectedCalendarEvent = null;
+
+  document.getElementById("eventModalTitle").textContent =
+    "Create an Event";
 
   document.getElementById("eventTitle").value = "";
   document.getElementById("eventDate").value = "";
